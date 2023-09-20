@@ -1,8 +1,151 @@
 /* font-family: 'Montserrat', sans-serif; */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #F9F9F9;
+}
+
+header {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo {
+  width: 100%;
+  height: 50%;
+  background-color: #00AEFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo p {
+  color: #181818;
+  font-size: 16px;
+
+  font-weight: 500;
+
+}
+
+.logo {
+  width: 100%;
+  height: 50%;
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  height: 378px;
+}
+
+.hero::before {
+  content: "";
+  ;
+  background-image: url('./wallpaper.jpeg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.407);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero h1 {
+  padding: 100px 0 0 100px;
+  color: #F9F9F9;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hero h2 {
+  width: 680px;
+  padding-left: 100px;
+  margin-top: 26px;
+  color: #F9F9F9;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h2 {
+  color: #181818;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: 17px;
+}
+
+main p {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 65px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  justify-content: center;
+}
+
+.shoe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 415px;
+  height: 302px;
+  background-color: #EBE9EA;
+}
+
+.shoe img {
+  width: 250px;
+  height: 150px;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #00AEFF;
+  height: 60px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+footer p {
+  color: #181818;
+  font-size: 18px;
+  font-weight: 500;
 }
